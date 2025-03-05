@@ -29,7 +29,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pt-BR">
-      <body className={`antialiased`}>
+      <body className={`${ralewaySans.variable} ${cinzelSans.variable} antialiased`}>
         <Header/>
         {children}
       </body>
