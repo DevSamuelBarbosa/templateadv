@@ -13,6 +13,9 @@ module.exports = {
 				quarterly: '#F0DDDB',
 				quinary: '#1F1F1F'
 			},
+			fontFamily: {
+				cinzel: ['Cinzel', 'serif'],
+			},
 		},
 	},
 	plugins: [],

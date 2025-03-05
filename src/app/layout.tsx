@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Raleway } from "next/font/google";
+import { Raleway, Cinzel } from "next/font/google";
 import "../styles/globals.css";
 import { config } from '@fortawesome/fontawesome-svg-core'
 import '@fortawesome/fontawesome-svg-core/styles.css'
@@ -9,6 +9,11 @@ import Header from '@/components/Header';
 
 const ralewaySans = Raleway({
   variable: "--font-raleway-sans",
+  subsets: ["latin"],
+});
+
+const cinzelSans = Cinzel({
+  variable: "--font-cinzel-sans",
   subsets: ["latin"],
 });
 
@@ -24,7 +29,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pt-BR">
-      <body className={`${ralewaySans.variable} antialiased`}>
+      <body className={`antialiased`}>
         <Header/>
         {children}
       </body>
