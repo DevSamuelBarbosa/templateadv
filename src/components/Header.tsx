@@ -27,16 +27,16 @@ export default function Header() {
                     </div>
 
                     <div className="flex space-x-4 mt-4 md:mt-0">
-                        <Link href="//facebook.com/" target="_blank" aria-label="Facebook" className="hover:text-slate-400 transition-colors">
+                        <Link href="https://facebook.com" target="_blank" aria-label="Facebook" className="hover:text-slate-400 transition-colors">
                             <FontAwesomeIcon icon={faFacebookF} className="text-base" />
                         </Link>
-                        <Link href="//instagram.com/" target="_blank" aria-label="Instagram" className="hover:text-slate-400 transition-colors">
+                        <Link href="https://instagram.com" target="_blank" aria-label="Instagram" className="hover:text-slate-400 transition-colors">
                             <FontAwesomeIcon icon={faInstagram} className="text-base" />
                         </Link>
-                        <Link href="//linkedin.com" target="_blank" aria-label="LinkedIn" className="hover:text-slate-400 transition-colors">
+                        <Link href="https://linkedin.com" target="_blank" aria-label="LinkedIn" className="hover:text-slate-400 transition-colors">
                             <FontAwesomeIcon icon={faLinkedin} className="text-base" />
                         </Link>
-                        <Link href="//youtube.com" target="_blank" aria-label="Youtube" className="hover:text-slate-400 transition-colors">
+                        <Link href="https://youtube.com" target="_blank" aria-label="Youtube" className="hover:text-slate-400 transition-colors">
                             <FontAwesomeIcon icon={faYoutube} className="text-base" />
                         </Link>
                     </div>
