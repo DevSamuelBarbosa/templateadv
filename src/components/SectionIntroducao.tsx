@@ -2,7 +2,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faScaleBalanced } from "@fortawesome/free-solid-svg-icons";
 
 
-export default function () {
+export default function SectionIntroducao() {
 	return (
 		<section className="container px-8 md:px-0 py-8 md:py-0 mx-auto flex justify-center items-center md:-mt-12 pb-28">
 			<div className="w-full xl:w-10/12 flex flex-col md:flex-row justify-center items-center gap-6 xl:gap-10">
