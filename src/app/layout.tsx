@@ -20,6 +20,10 @@ const cinzelSans = Cinzel({
 export const metadata: Metadata = {
   title: "Template Adv",
   description: "Template moderno e responsivo para sites de advogados, desenvolvido com Next.js, TypeScript e TailwindCSS.",
+  robots: {
+    index: false,
+    follow: false,
+  },
 };
 
 export default function RootLayout({
