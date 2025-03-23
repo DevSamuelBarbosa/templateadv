@@ -5,6 +5,8 @@ import { config } from '@fortawesome/fontawesome-svg-core'
 import '@fortawesome/fontawesome-svg-core/styles.css'
 config.autoAddCss = false
 
+const pathPrefix = process.env.NEXT_PUBLIC_APP_ENVIRONMENT === 'development' ? '' : '/templateadv';
+
 import Header from '@/components/Header';
 
 const ralewaySans = Raleway({
@@ -22,11 +24,11 @@ export const metadata: Metadata = {
   description: "Template moderno e responsivo para sites de advogados, desenvolvido com Next.js, TypeScript e TailwindCSS.",
   icons: {
     icon: [
-      { url: '/favicon.ico' },
-      { url: '/icon.png', type: 'image/png' },
+      { url: `${pathPrefix}/favicon.ico` },
+      { url: `${pathPrefix}/icon.png`, type: 'image/png' },
     ],
     apple: [
-      { url: '/apple-icon.png' },
+      { url: `${pathPrefix}/apple-icon.png` },
     ],
   },
   robots: {
