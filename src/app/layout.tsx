@@ -8,6 +8,7 @@ config.autoAddCss = false
 const pathPrefix = process.env.NEXT_PUBLIC_APP_ENVIRONMENT === 'development' ? '' : '/templateadv';
 
 import Header from '@/components/Header';
+import Footer from "@/components/Footer";
 
 const ralewaySans = Raleway({
   variable: "--font-raleway-sans",
@@ -47,6 +48,7 @@ export default function RootLayout({
       <body className={`${ralewaySans.variable} ${cinzelSans.variable} antialiased`}>
         <Header/>
         {children}
+        <Footer/>
       </body>
     </html>
   );
