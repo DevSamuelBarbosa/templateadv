@@ -10,18 +10,18 @@ export default function Header() {
                 <div className="container mx-auto flex flex-col items-center md:flex-row md:justify-between">
                     <div className="text-xs font-normal flex flex-row items-center gap-4 md:gap-6 md:text-sm">
                         {/* MOBILE */}
-                        <Link href="//api.whatsapp.com/send?phone=5554993397936" target="_blank" className="flex md:hidden items-center gap-1 hover:text-slate-400 transition-colors">
+                        <Link href="https://api.whatsapp.com/send?phone=5554993397936" target="_blank" className="flex md:hidden items-center gap-1 hover:text-slate-400 transition-colors">
                             <FontAwesomeIcon icon={faWhatsapp} /> (54) 99339-7936
                         </Link>
-                        <Link href="mailto:samuelbarbosa170319@gmail.com" className="flex md:hidden items-center gap-1 hover:text-slate-400 transition-colors">
+                        <Link href="https://mailto:samuelbarbosa170319@gmail.com" className="flex md:hidden items-center gap-1 hover:text-slate-400 transition-colors">
                             <FontAwesomeIcon icon={faEnvelope} /> samuelbarbosa170319@gmail.com
                         </Link>
                         
                         {/* DESKTOP */}
-                        <Link href="//web.whatsapp.com/send?phone=5554993397936" target="_blank" className="hidden md:flex items-center gap-1 hover:text-slate-400 transition-colors">
+                        <Link href="https://web.whatsapp.com/send?phone=5554993397936" target="_blank" className="hidden md:flex items-center gap-1 hover:text-slate-400 transition-colors">
                             <FontAwesomeIcon icon={faWhatsapp} /> (54) 99339-7936
                         </Link>
-                        <Link href="//mail.google.com/mail/u/0/?fs=1&to=samuelbarbosa170319@gmail.com&tf=cm" target="_blank" className="hidden md:flex items-center gap-1 hover:text-slate-400 transition-colors">
+                        <Link href="https://mail.google.com/mail/u/0/?fs=1&to=samuelbarbosa170319@gmail.com&tf=cm" target="_blank" className="hidden md:flex items-center gap-1 hover:text-slate-400 transition-colors">
                             <FontAwesomeIcon icon={faEnvelope} /> samuelbarbosa170319@gmail.com
                         </Link>
                     </div>
