@@ -1,7 +1,6 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faWhatsapp, faFacebookF, faInstagram, faLinkedin, faYoutube } from "@fortawesome/free-brands-svg-icons";
-import { faEnvelope } from "@fortawesome/free-regular-svg-icons";
-import { faLocationDot } from "@fortawesome/free-solid-svg-icons";
+import { faLocationDot, faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import Link from 'next/link';
 
 export default function Footer() {
@@ -10,7 +9,9 @@ export default function Footer() {
 			<div className="container mx-auto flex flex-col justify-center items-center gap-10 py-12 px-8 sm:pt-14 sm:pb-6 sm:px-0">
 				<div className="w-full xl:w-5/6 grid md:grid-cols-3 gap-16">
 					<div className="flex flex-col gap-4 md:gap-2 text-center md:text-left">
-						<a href="/" className="text-4xl font-extrabold text-white">LOGO</a>
+                        <Link href="/" className="text-4xl font-extrabold text-white">
+							LOGO
+						</Link>
 						<p className="text-slate-300 text-center md:text-left text-md leading-relaxed">
 							Defendendo seus direitos com ética e compromisso.
 						</p>
