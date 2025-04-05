@@ -15,7 +15,7 @@ const integrantesEquipe = [
 	},
 	{
 		imagem: 'equipe.jpg',
-		nome: 'Dra. Henrique Duarte',
+		nome: 'Dr. Henrique Duarte',
 		cargo: "Coordenador de Direito Empresarial",
 		facebook: "https://facebook.com/",
 		instagram: "https://instagram.com/",
@@ -31,7 +31,7 @@ const integrantesEquipe = [
 	},
 	{
 		imagem: 'equipe.jpg',
-		nome: 'Dra. Rafael Montenegro',
+		nome: 'Dr. Rafael Montenegro',
 		cargo: "Advogado Trabalhista",
 		facebook: "https://facebook.com/",
 		instagram: "https://instagram.com/",
