@@ -1,5 +1,5 @@
 import HeroSection from '@/components/HeroSection';
-import SectionIntroducao from '@/components/SectionIntroducao';
+import SectionEquipe from '@/components/SectionEquipe';
 import SectionConfianca from '@/components/SectionConfianca';
 import SectionDados from '@/components/SectionDados';
 import SectionAreasAtuacao from '@/components/SectionAreasAtuacao';
@@ -10,7 +10,7 @@ export default function Home() {
 	return (
 		<main>
             <HeroSection/>
-            <SectionIntroducao/>
+            <SectionEquipe/>
             <SectionConfianca/>
             <SectionDados/>
             <SectionAreasAtuacao/>

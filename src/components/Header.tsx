@@ -49,6 +49,7 @@ export default function Header() {
 
                     <nav className="hidden md:flex">
                         <ul className="flex flex-col items-center gap-4 md:flex-row md:space-x-6 text-white">
+                            <li><Link href="#equipe" className="text-sm font-medium hover:text-slate-400 transition-colors">Equipe</Link></li>
                             <li><Link href="#confianca" className="text-sm font-medium hover:text-slate-400 transition-colors">Confiança</Link></li>
                             <li><Link href="#sobre" className="text-sm font-medium hover:text-slate-400 transition-colors">Sobre</Link></li>
                             <li><Link href="#areasdeatuacao" className="text-sm font-medium hover:text-slate-400 transition-colors">Áreas de atuação</Link></li>
