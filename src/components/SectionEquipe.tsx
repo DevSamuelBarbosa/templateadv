@@ -12,6 +12,7 @@ const integrantesEquipe = [
 		facebook: "https://facebook.com/",
 		instagram: "https://instagram.com/",
 		tiktok: "https://tiktok.com/",
+        animationDirection: "fade-right"
 	},
 	{
 		imagem: 'equipe.jpg',
@@ -20,6 +21,7 @@ const integrantesEquipe = [
 		facebook: "https://facebook.com/",
 		instagram: "https://instagram.com/",
 		tiktok: "https://tiktok.com/",
+        animationDirection: "fade-right"
 	},
 	{
 		imagem: 'equipe.jpg',
@@ -28,6 +30,7 @@ const integrantesEquipe = [
 		facebook: "https://facebook.com/",
 		instagram: "https://instagram.com/",
 		tiktok: "https://tiktok.com/",
+        animationDirection: "fade-left"
 	},
 	{
 		imagem: 'equipe.jpg',
@@ -36,6 +39,7 @@ const integrantesEquipe = [
 		facebook: "https://facebook.com/",
 		instagram: "https://instagram.com/",
 		tiktok: "https://tiktok.com/",
+        animationDirection: "fade-left"
 	}
 ];
 
@@ -44,7 +48,7 @@ export default function SectionEquipe() {
 	return (
 		<section id="equipe" className="container mx-auto flex justify-center items-center py-12 px-8 sm:py-20 sm:px-0">
 			<div className="w-full flex flex-col justify-evenly align-center gap-8 xl:gap-16">
-				<div className="w-full flex flex-col gap-4 justify-center align-center">
+				<div className="w-full flex flex-col gap-4 justify-center align-center" data-aos="fade-up">
 					<div className="border-t-2 border-tertiary w-20 mb-4 mx-auto"></div>
 					<h3 className="font-['Cinzel'] text-white text-center text-2xl lg:text-3xl xl:text-4xl font-semibold leading-relaxed">Conheça nossa equipe</h3>
 					<p className="text-slate-300 text-center text-sm w-4/5 xl:w-3/5 mx-auto leading-relaxed">Lorem ipsum, dolor sit
@@ -53,7 +57,9 @@ export default function SectionEquipe() {
 
 				<div className="w-full xl:w-10/12 mx-auto grid grid-cols-2 md:grid-cols-4 gap-4 sm:gap-8 xl:gap-10">
 					{integrantesEquipe.map((integrante, index) => (
-						<div key={index} className="text-center px-2 sm:px-4 lg:px-6 py-6 sm:py-4 flex flex-col gap-4 justify-center">
+						<div key={index} className="text-center px-2 sm:px-4 lg:px-6 py-6 sm:py-4 flex flex-col gap-4 justify-center"
+                            data-aos={integrante.animationDirection}
+                        >
 							<div className="relative w-28 h-28 md:w-36  md:h-36 xl:w-44 xl:h-44 mx-auto overflow-hidden rounded-full">
 								<Image
 									src={getImagePath(`/${integrante.imagem}`)}

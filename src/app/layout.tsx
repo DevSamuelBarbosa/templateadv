@@ -11,45 +11,45 @@ import Header from '@/components/Header';
 import Footer from "@/components/Footer";
 
 const ralewaySans = Raleway({
-  variable: "--font-raleway-sans",
-  subsets: ["latin"],
+	variable: "--font-raleway-sans",
+	subsets: ["latin"],
 });
 
 const cinzelSans = Cinzel({
-  variable: "--font-cinzel-sans",
-  subsets: ["latin"],
+	variable: "--font-cinzel-sans",
+	subsets: ["latin"],
 });
 
 export const metadata: Metadata = {
-  title: "Template Adv",
-  description: "Template moderno e responsivo para sites de advogados, desenvolvido com Next.js, TypeScript e TailwindCSS.",
-  icons: {
-    icon: [
-      { url: `${pathPrefix}/favicon.ico` },
-      { url: `${pathPrefix}/icon.png`, type: 'image/png' },
-    ],
-    apple: [
-      { url: `${pathPrefix}/apple-icon.png` },
-    ],
-  },
-  robots: {
-    index: false,
-    follow: false,
-  },
+	title: "Template Adv",
+	description: "Template moderno e responsivo para sites de advogados, desenvolvido com Next.js, TypeScript e TailwindCSS.",
+	icons: {
+		icon: [
+			{ url: `${pathPrefix}/favicon.ico` },
+			{ url: `${pathPrefix}/icon.png`, type: 'image/png' },
+		],
+		apple: [
+			{ url: `${pathPrefix}/apple-icon.png` },
+		],
+	},
+	robots: {
+		index: false,
+		follow: false,
+	},
 };
 
 export default function RootLayout({
-  children,
+	children,
 }: Readonly<{
-  children: React.ReactNode;
+	children: React.ReactNode;
 }>) {
-  return (
-    <html lang="pt-BR">
-      <body className={`${ralewaySans.variable} ${cinzelSans.variable} antialiased`}>
-        <Header/>
-        {children}
-        <Footer/>
-      </body>
-    </html>
-  );
+	return (
+		<html lang="pt-BR">
+			<body className={`${ralewaySans.variable} ${cinzelSans.variable} antialiased overflow-x-hidden`}>
+				<Header />
+				{children}
+				<Footer />
+			</body>
+		</html>
+	);
 }

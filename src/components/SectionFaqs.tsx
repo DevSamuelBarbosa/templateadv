@@ -7,21 +7,25 @@ const faqs = [
 		question: "Como funciona a primeira consulta com um advogado?",
 		answer:
 			"Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita itaque facilis, possimus labore, eum nesciunt harum repellat tempora impedit id sint officia excepturi repudiandae perferendis consequatur totam neque magnam ipsam!",
+        animationDirection: "fade-left"
 	},
 	{
 		question: "Quanto tempo leva um processo judicial?",
 		answer:
 			"Lorem ipsum dolor sit amet consectetur adipisicing elit. Est aspernatur pariatur nulla voluptatibus, dolore explicabo delectus unde quos voluptatum velit magnam harum repellat quod. Facere maiores deserunt eos vitae ipsum.",
+        animationDirection: "fade-left"
 	},
 	{
 		question: "Quais documentos são necessários para abrir um processo?",
 		answer:
 			"Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, dolorem! Excepturi sit molestiae labore iste! Delectus culpa optio repellendus laboriosam totam id velit qui tenetur vitae et nam, voluptatem aliquam!",
+        animationDirection: "fade-left"
 	},
 	{
 		question: "Quais são os custos envolvidos em um processo?",
 		answer:
 			"Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, dolorem! Excepturi sit molestiae labore iste! Delectus culpa optio repellendus laboriosam totam id velit qui tenetur vitae et nam, voluptatem aliquam!",
+        animationDirection: "fade-left"
 	},
 ];
 
@@ -35,7 +39,7 @@ export default function SectionFaqs() {
 	return (
 		<section className="container mx-auto flex justify-center items-center py-12 px-8 sm:py-20 sm:px-0">
 			<div className="w-full flex flex-col justify-evenly align-center gap-16">
-				<div>
+				<div data-aos="fade-up">
                     <div className="border-t-2 border-tertiary w-20 mb-4 mx-auto"></div>
 					<h3 className="font-['Cinzel'] text-white text-center text-2xl lg:text-3xl xl:text-4xl font-semibold leading-relaxed">
 						Perguntas frequentes
@@ -44,7 +48,10 @@ export default function SectionFaqs() {
 
 				<div className="w-full xl:w-10/12 mx-auto flex flex-col gap-10">
 					{faqs.map((faq, index) => (
-						<div key={index} className="border-b border-quinary py-4 rounded">
+						<div key={index} className="border-b border-quinary py-4 rounded"
+                            data-aos={faq.animationDirection}
+                            data-aos-delay={index * 100}
+                        >
 							<button onClick={() => toggleFAQ(index)} className="flex justify-between w-full text-left">
 								<span className="text-lg font-medium text-slate-200">
 									{faq.question}
