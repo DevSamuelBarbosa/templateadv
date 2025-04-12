@@ -8,7 +8,7 @@ import Link from 'next/link'
 
 const integrantesEquipe = [
 	{
-		imagem: 'equipe.jpg',
+		imagem: 'equipe.webp',
 		nome: 'Dra. Mariana Vasconcelos',
 		cargo: "Sócia Fundadora / Advogada Cível",
 		facebook: "https://facebook.com/",
@@ -17,7 +17,7 @@ const integrantesEquipe = [
         animationDirection: "fade-right"
 	},
 	{
-		imagem: 'equipe.jpg',
+		imagem: 'equipe.webp',
 		nome: 'Dr. Henrique Duarte',
 		cargo: "Coordenador de Direito Empresarial",
 		facebook: "https://facebook.com/",
@@ -26,7 +26,7 @@ const integrantesEquipe = [
         animationDirection: "fade-right"
 	},
 	{
-		imagem: 'equipe.jpg',
+		imagem: 'equipe.webp',
 		nome: 'Dra. Luana Figueiredo',
 		cargo: "Especialista em Direito Tributário",
 		facebook: "https://facebook.com/",
@@ -35,7 +35,7 @@ const integrantesEquipe = [
         animationDirection: "fade-left"
 	},
 	{
-		imagem: 'equipe.jpg',
+		imagem: 'equipe.webp',
 		nome: 'Dr. Rafael Montenegro',
 		cargo: "Advogado Trabalhista",
 		facebook: "https://facebook.com/",

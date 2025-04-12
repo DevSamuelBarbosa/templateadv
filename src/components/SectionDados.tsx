@@ -5,7 +5,7 @@ export default function SectionDados() {
     return (
         <section id="sobre" className="relative w-full flex items-center justify-center md:pt-16 md:pb-10">
             <Image 
-                src={getImagePath("/museum.jpg")}
+                src={getImagePath("/museum.webp")}
                 alt="Section dados Background"
                 fill
                 className="absolute top-0 left-0 w-full h-full object-cover object-[15%_75%] md:object-[center] z-[-1]"

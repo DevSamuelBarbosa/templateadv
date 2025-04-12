@@ -5,7 +5,7 @@ export default function HeroSection() {
 	return (
 		<section className="relative w-full h-[60vh] md:h-[80vh] flex items-center justify-center overflow-hidden">
 			<Image 
-				src={getImagePath("/bg_hero_section2.jpg")}
+				src={getImagePath("/bg_hero_section2.webp")}
 				alt="Hero Section Background"
 				fill
 				className="object-cover object-[center] z-0"
