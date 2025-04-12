@@ -2,7 +2,7 @@
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faWhatsapp, faFacebookF, faInstagram, faLinkedin, faYoutube } from "@fortawesome/free-brands-svg-icons";
-import { faLocationDot, faEnvelope, faArrowUp } from "@fortawesome/free-solid-svg-icons";
+import { faLocationDot, faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import Link from 'next/link';
 import ScrollToTopButton from "./ScrollToTopButton";
 
