@@ -1,13 +1,17 @@
+"use client";
+
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faWhatsapp, faFacebookF, faInstagram, faLinkedin, faYoutube } from "@fortawesome/free-brands-svg-icons";
-import { faLocationDot, faEnvelope } from "@fortawesome/free-solid-svg-icons";
+import { faLocationDot, faEnvelope, faArrowUp } from "@fortawesome/free-solid-svg-icons";
 import Link from 'next/link';
+import ScrollToTopButton from "./ScrollToTopButton";
 
 export default function Footer() {
 	return (
-		<footer className="bg-quinary">
+		<footer className="bg-quinary relative">
+            <ScrollToTopButton/>
 			<div className="container mx-auto flex flex-col justify-center items-center gap-10 py-12 px-8 sm:pt-14 sm:pb-6 sm:px-0">
-				<div className="w-full xl:w-5/6 grid md:grid-cols-3 gap-16">
+				<div className="w-full xl:w-5/6 grid md:grid-cols-3 gap-10 lg:gap-16">
 					<div className="flex flex-col gap-4 md:gap-2 text-center md:text-left">
                         <Link href="/" className="text-4xl font-extrabold text-white">
 							LOGO
@@ -36,7 +40,7 @@ export default function Footer() {
 						</p>
 					</div>
 
-					<div className="flex flex-col gap-4 md:gap-2 text-center md:text-left text-white">
+					<div className="flex flex-col gap-4 md:gap-2 text-center md:text-left text-white pl-0 md:pl-12 lg:pl-0">
 						<h3 className="text-xl md:text-lg font-semibold">Siga-nos</h3>
 						<div className="flex flex-row justify-center md:justify-start gap-10 md:gap-6 mt-2">
 							<Link href="https://facebook.com" target="_blank" aria-label="Facebook" className="hover:text-slate-400 transition-colors">
