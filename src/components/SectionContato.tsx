@@ -1,6 +1,6 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faWhatsapp } from "@fortawesome/free-brands-svg-icons";
-import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
+import { faWhatsapp } from "@fortawesome/free-brands-svg-icons/faWhatsapp";
+import { faEnvelope } from "@fortawesome/free-solid-svg-icons/faEnvelope";
 import Link from 'next/link'
 
 export default function SectionContato() {

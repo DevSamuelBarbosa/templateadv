@@ -1,5 +1,11 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faHouseChimney, faSuitcase, faBookOpen, faUmbrella, faHouse, faCoins } from "@fortawesome/free-solid-svg-icons";
+import { faHouseChimney } from "@fortawesome/free-solid-svg-icons/faHouseChimney";
+import { faSuitcase } from "@fortawesome/free-solid-svg-icons/faSuitcase";
+import { faBookOpen } from "@fortawesome/free-solid-svg-icons/faBookOpen";
+import { faUmbrella } from "@fortawesome/free-solid-svg-icons/faUmbrella";
+import { faHouse } from "@fortawesome/free-solid-svg-icons/faHouse";
+import { faCoins } from "@fortawesome/free-solid-svg-icons/faCoins";
+
 
 const areasAtuacao = [
 	{

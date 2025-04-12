@@ -1,6 +1,10 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faWhatsapp, faFacebookF, faInstagram, faLinkedin, faYoutube } from "@fortawesome/free-brands-svg-icons";
-import { faEnvelope } from "@fortawesome/free-regular-svg-icons";
+import { faWhatsapp } from "@fortawesome/free-brands-svg-icons/faWhatsapp";
+import { faFacebookF } from "@fortawesome/free-brands-svg-icons/faFacebookF";
+import { faInstagram } from "@fortawesome/free-brands-svg-icons/faInstagram";
+import { faLinkedin } from "@fortawesome/free-brands-svg-icons/faLinkedin";
+import { faYoutube } from "@fortawesome/free-brands-svg-icons/faYoutube";
+import { faEnvelope } from "@fortawesome/free-regular-svg-icons/faEnvelope";
 import Link from 'next/link'
 
 export default function Header() {

@@ -1,7 +1,9 @@
 import Image from "next/image";
 import { getImagePath } from "@/utils/getImagePath";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faFacebookF, faInstagram, faTiktok } from "@fortawesome/free-brands-svg-icons";
+import { faFacebookF } from "@fortawesome/free-brands-svg-icons/faFacebookF";
+import { faInstagram } from "@fortawesome/free-brands-svg-icons/faInstagram";
+import { faTiktok } from "@fortawesome/free-brands-svg-icons/faTiktok";
 import Link from 'next/link'
 
 const integrantesEquipe = [
@@ -64,9 +66,9 @@ export default function SectionEquipe() {
 								<Image
 									src={getImagePath(`/${integrante.imagem}`)}
 									alt={integrante.nome}
-									fill
-									className="object-cover"
-									priority
+                                    width={200}
+                                    height={200}
+                                    className="object-cover rounded-full"
 								/>
 							</div>
 
@@ -75,15 +77,15 @@ export default function SectionEquipe() {
 								<p className="text-xs lg:text-sm font-normal text-slate-300">{integrante.cargo}</p>
 
 								<div className="flex flex-row gap-6 md:gap-4 justify-center mt-2 md:mt-4 lg:mt-2">
-									<Link href={integrante.facebook} target="_blank" className="">
+									<Link href={integrante.facebook} target="_blank" aria-label={`Facebook ${integrante.nome}`}>
 										<FontAwesomeIcon icon={faFacebookF} />
 									</Link>
 
-									<Link href={integrante.instagram} target="_blank" className="">
+									<Link href={integrante.instagram} target="_blank" aria-label={`Instagram ${integrante.nome}`}>
 										<FontAwesomeIcon icon={faInstagram} />
 									</Link>
 									
-									<Link href={integrante.tiktok} target="_blank" className="">
+									<Link href={integrante.tiktok} target="_blank" aria-label={`Tiktok ${integrante.nome}`}>
 										<FontAwesomeIcon icon={faTiktok} />
 									</Link>
 								</div>

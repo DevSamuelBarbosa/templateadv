@@ -1,16 +1,18 @@
 'use client';
 
+import dynamic from 'next/dynamic';
 import HeroSection from '@/components/HeroSection';
-import SectionEquipe from '@/components/SectionEquipe';
-import SectionConfianca from '@/components/SectionConfianca';
-import SectionDados from '@/components/SectionDados';
-import SectionAreasAtuacao from '@/components/SectionAreasAtuacao';
-import SectionFaqs from '@/components/SectionFaqs';
-import SectionContato from '@/components/SectionContato';
 
 import { useEffect } from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+
+const SectionEquipe = dynamic(() => import('@/components/SectionEquipe'));
+const SectionConfianca = dynamic(() => import('@/components/SectionConfianca'));
+const SectionDados = dynamic(() => import('@/components/SectionDados'));
+const SectionAreasAtuacao = dynamic(() => import('@/components/SectionAreasAtuacao'));
+const SectionFaqs = dynamic(() => import('@/components/SectionFaqs'));
+const SectionContato = dynamic(() => import('@/components/SectionContato'));
 
 export default function Home() {
     useEffect(() => {

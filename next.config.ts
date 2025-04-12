@@ -10,6 +10,7 @@ const nextConfig: NextConfig = {
     },
     basePath: ambiente ? "/templateadv" : '',
     assetPrefix: ambiente ? "/templateadv" : '',
+    trailingSlash: true,
 };
 
 export default nextConfig;
