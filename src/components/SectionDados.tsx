@@ -7,7 +7,8 @@ export default function SectionDados() {
             <Image 
                 src={getImagePath("/museum.webp")}
                 alt="Section dados Background"
-                fill
+                width={1920}
+                height={1080}
                 className="absolute top-0 left-0 w-full h-full object-cover object-[15%_75%] md:object-[center] z-[-1]"
             />
 

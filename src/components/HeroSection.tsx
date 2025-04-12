@@ -4,13 +4,14 @@ import { getImagePath } from "@/utils/getImagePath";
 export default function HeroSection() {
 	return (
 		<section className="relative w-full h-[60vh] md:h-[80vh] flex items-center justify-center overflow-hidden">
-			<Image 
-				src={getImagePath("/bg_hero_section2.webp")}
-				alt="Hero Section Background"
-				fill
-				className="object-cover object-[center] z-0"
-				priority
-			/>
+			<Image
+                src={getImagePath("/bg_hero_section2.webp")}
+                alt="Hero Section Background"
+                width={1920}
+                height={1080}
+                priority
+                className="absolute top-0 left-0 w-full h-full object-cover object-center z-0"
+            />
 
 			<div className="container h-full mx-auto flex justify-end items-center relative z-10">
 				<div className="w-full px-8 lg:w-1/2">
