@@ -32,10 +32,6 @@ export const metadata: Metadata = {
 			{ url: `${pathPrefix}/apple-icon.png` },
 		],
 	},
-	robots: {
-		index: false,
-		follow: false,
-	},
 };
 
 export default function RootLayout({

@@ -65,7 +65,7 @@ export default function Footer() {
 				</div>
 
 				<p className="text-slate-300 text-xs text-center mt-6">
-					Nome empresa · © {new Date().getFullYear()} · Todos os direitos reservados.
+					TemplateAdv · © {new Date().getFullYear()} · Todos os direitos reservados · <Link href="/politica" className="hover:text-slate-400 transition-colors">Política de privacidade</Link>
 				</p>
 			</div>
 		</footer>
